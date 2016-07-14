@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li><a [routerLink]="['/']">Home</a></li> 
+        <li><a [routerLink]="['/flight-booking/flight-search']">Book a Flight</a></li> 
+    </ul>
+</nav>
+
+
+<div class="container">
+    
+    <router-outlet></router-outlet>
+
+
+    <hr>
+    <router-outlet name="aux"></router-outlet>
+    
+</div>
